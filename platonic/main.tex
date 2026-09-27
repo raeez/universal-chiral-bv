@@ -1,0 +1,61 @@
+\documentclass[11pt,twoside,openright]{memoir}
+%
+%
+%
+\usepackage[localtheorems]{raeez-math-template}
+\usepackage{platonic}
+\input{integrated_macros}
+\title{\texorpdfstring{\textbf{Universal Chiral BV and Einstein Completion}\\[0.55em]\Large The mixed boundary datum, its centre and deformation algebra, the BV envelope, gravitational completion, and anomaly geometry}{Universal Chiral BV and Einstein Completion: The mixed boundary datum, its centre and deformation algebra, the BV envelope, gravitational completion, and anomaly geometry}}
+\author{Raeez Lorgat}
+\date{26 July 2026}
+\hypersetup{pdftitle={Universal Chiral BV and Einstein Completion},pdfauthor={Raeez Lorgat},pdfsubject={Mixed boundary data, centres, deformation algebras, BV envelopes, and gravitational completion},pdfkeywords={chiral BV theory, boundary algebra, derived centre, deformation complex, Einstein completion, anomaly}}
+\begin{document}
+\frontmatter
+\maketitle
+\thispagestyle{empty}
+\cleardoublepage
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+Bulk observables act on boundary conditions and on the operators between them. Reconstructing a bulk theory requires this entire action, including its compatibility with composition and with the motion of insertions. We study that problem for boundary data with distinct holomorphic and transverse products, a chiral Lie operation, and a specified interface law.
+
+For supplied complete mixed data, the category of compatible modules defines a derived centre. A specified coloured operad organizes simultaneous deformations of the operations and their action. The shifted cotangent construction gives a classical Batalin--Vilkovisky theory when its local field algebra and pairing are supplied. An invariant orientation gives a square-zero algebraic quantum differential on finite perfect charts. These constructions provide comparison objects for a physical theory. Identifying them with its observables requires a separately constructed bulk action, geometric descent, and compatible quantization.
+
+Three-dimensional gravity supplies a concrete comparison problem. Flat Cartan connections describe Einstein solutions on the invertible-coframe locus. Relating that classical correspondence to a mixed boundary theory additionally requires the physical boundary currents, the action and pairing, and the allowed global sectors. The local algebraic constructions and the gravitational comparison are developed with these distinct hypotheses.
+
+\chapter*{Boundary actions and physical bulk theories}
+\addcontentsline{toc}{chapter}{Boundary actions and physical bulk theories}
+A boundary condition determines which bulk fields and boundary operators may be composed. The action of a bulk observable must commute with boundary composition through specified homotopies. Its value on each separate boundary object does not determine those homotopies. The appropriate target therefore contains coherent actions on the category of boundary conditions.
+
+Fix a field theory $\mathcal T$ on a manifold $M$ with boundary. Its fields, classical action, gauge differential, boundary condition, and permitted support domains define the classical observable complexes. A quantum theory additionally requires a regularization and a solution of the quantum master equation on those domains. Write $\operatorname{Obs}_{\mathcal T}^{\hbar}(U)$ for its quantum observables on an open set $U$. The parameter $\hbar$ records quantum order.
+
+Independently, let $\mathcal C_{\partial}$ be a category of boundary conditions with its local products, interface actions, and coefficient topology. A geometric centre $Z_{\mathrm{geom}}^{\hbar}(\mathcal C_{\partial})$ must represent the permitted coherent local actions, including position dependence, collision maps, and descent. Choose a collar $V\times[0,\epsilon)$ of a boundary open set $V$, with its projection to $V$. On this chosen geometry the desired comparison is
+\[
+ \Phi_{\mathcal T,V}:\operatorname{Obs}_{\mathcal T}^{\hbar}(V\times[0,\epsilon))
+ \longrightarrow Z_{\mathrm{geom}}^{\hbar}(\mathcal C_{\partial})(V).
+\]
+Constructing this map, proving it is an equivalence on a specified sector, and comparing physical states are three different problems. A filtered equivalence criterion applies only after the map and its compatibility with the filtrations have been constructed.
+
+The mixed module centre below begins with supplied holomorphic and transverse operations. The associated deformation algebra records variations of those operations together. Its shifted cotangent theory has additional dual fields and a canonical classical master equation. A physical identification must compare those fields and that action with the independently defined theory. In gravity, the Cartan connection and invertible coframe supply the classical geometry. Boundary current reduction, quantum measures, pairings, holonomy sectors, and sewing require further maps on their stated domains.
+
+\chapter*{Notation and normalization}
+\addcontentsline{toc}{chapter}{Notation and normalization}
+The ground field has characteristic zero.  Stable categories are presentable and idempotent-complete.  Tensor products preserve colimits separately.  Completions are separated inverse limits of finite weight or proper-height quotients.  The Igusa normalization is
+\[
+ \Dtheta=64\Dmon,\qquad \ChiTen=\Dmon^2,
+\]
+with $\Dmon$ monic.  Physical charge is additive; Gram degree is carried through its polarization cocycle.  Bar, factorization, and Hopf coproducts retain distinct notation and distinct geometric meanings.
+
+\tableofcontents
+\mainmatter
+\input{chapters/00_home.tex}
+\input{chapters/Volume_V_Universal_Chiral_BV_and_Einstein_Completion.tex}
+\input{chapters/Volume_I_Ordered_Chiral_Geometry.tex}
+\input{chapters/Volume_I_audit_and_obstructions.tex}
+\input{chapters/Volume_II_Mixed_HT_Deligne_Theory.tex}
+\input{chapters/Volume_III_Igusa_Borcherds_Theory.tex}
+\input{chapters/Volume_IV_Calabi_Yau_Quantum_Groups.tex}
+\backmatter
+\bibliographystyle{alpha}
+\bibliography{references}
+\end{document}
